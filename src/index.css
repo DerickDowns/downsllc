@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #0a0e1a;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #0a0e1a;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #c9a446;
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #e0b84f;
+  }
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #c9a446 #0a0e1a;
+  }
+}
+
+@layer components {
+  .font-display {
+    font-family: 'Playfair Display', serif;
+  }
+
+  .gold-gradient {
+    background: linear-gradient(135deg, #c9a446 0%, #e0b84f 50%, #c9a446 100%);
+  }
+
+  .gold-text-gradient {
+    background: linear-gradient(135deg, #c9a446, #e0b84f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .section-padding {
+    @apply py-20 px-6 md:px-12 lg:px-24;
+  }
+
+  .card-base {
+    background-color: #1a2236;
+    border: 1px solid rgba(201, 164, 70, 0.2);
+    @apply rounded-lg;
+  }
+
+  .btn-gold {
+    background-color: #c9a446;
+    color: #0a0e1a;
+    @apply font-semibold px-6 py-3 rounded transition-all duration-300;
+  }
+
+  .btn-gold:hover {
+    background-color: #e0b84f;
+    @apply shadow-lg;
+    box-shadow: 0 0 20px rgba(201, 164, 70, 0.35);
+  }
+
+  .btn-outline-gold {
+    border: 1px solid #c9a446;
+    color: #c9a446;
+    @apply font-semibold px-6 py-3 rounded transition-all duration-300;
+  }
+
+  .btn-outline-gold:hover {
+    background-color: rgba(201, 164, 70, 0.1);
+    box-shadow: 0 0 20px rgba(201, 164, 70, 0.2);
+  }
+
+  .input-gold {
+    background-color: #0a0e1a;
+    border: 1px solid rgba(201, 164, 70, 0.2);
+    color: #ffffff;
+    @apply w-full px-4 py-3 rounded transition-all duration-300 outline-none;
+  }
+
+  .input-gold:focus {
+    border-color: #c9a446;
+    box-shadow: 0 0 0 2px rgba(201, 164, 70, 0.15);
+  }
+
+  .input-gold::placeholder {
+    color: #475569;
+  }
+
+  .gold-divider {
+    height: 1px;
+    background: linear-gradient(to right, transparent, #c9a446, transparent);
+  }
+}
