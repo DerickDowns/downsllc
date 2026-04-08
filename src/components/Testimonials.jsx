@@ -152,7 +152,7 @@ export default function Testimonials() {
           className="text-center mt-14"
         >
           <p className="text-sm mb-5" style={{ color: '#546e7a' }}>
-            Join the clients who trusted VIG to deliver the truth.
+            Join the clients who trusted VI to deliver the truth.
           </p>
           <a
             href="https://calendly.com/valdesinvgr"

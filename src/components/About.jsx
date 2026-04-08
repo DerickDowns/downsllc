@@ -123,11 +123,11 @@ export default function About() {
             </h2>
 
             <p className="text-base leading-relaxed mb-5" style={{ color: '#546e7a' }}>
-              Valdes Investigation Group (VIG) is Miami's premier private investigation agency, built on a foundation of integrity, professionalism, and an unwavering commitment to truth. Led by Ms. Y. Valdes, our agency has established itself as the most trusted name in Florida investigations.
+              Valdes Investigation (VI) is Miami's premier private investigation agency, built on a foundation of integrity, professionalism, and an unwavering commitment to truth. Led by Ms. Y. Valdes, our agency has established itself as the most trusted name in Florida investigations.
             </p>
 
             <p className="text-base leading-relaxed mb-8" style={{ color: '#546e7a' }}>
-              With over 20 years in business administration and 10 years of direct investigative experience, Ms. Valdes brings a unique combination of business acumen and field expertise to every case. From complex corporate fraud to sensitive domestic matters, VIG delivers results that clients can act on.
+              With over 20 years in business administration and 10 years of direct investigative experience, Ms. Valdes brings a unique combination of business acumen and field expertise to every case. From complex corporate fraud to sensitive domestic matters, VI delivers results that clients can act on.
             </p>
 
             {/* Pull quote */}

@@ -52,13 +52,13 @@ export default function Navbar() {
                 className="font-display text-2xl font-bold tracking-widest"
                 style={{ color: scrolled ? '#0a3d62' : '#ffffff' }}
               >
-                VIG
+                VI
               </span>
               <span
                 className="text-xs font-light tracking-[0.2em] uppercase mt-0.5"
                 style={{ color: scrolled ? '#546e7a' : 'rgba(255,255,255,0.7)' }}
               >
-                Valdes Investigation Group
+                Valdes Investigation
               </span>
             </div>
           </a>

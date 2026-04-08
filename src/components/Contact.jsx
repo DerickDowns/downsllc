@@ -59,7 +59,7 @@ export default function Contact() {
             Get In Touch
           </p>
           <h2 className="font-display text-4xl md:text-5xl font-bold mb-5" style={{ color: '#ffffff' }}>
-            Contact VIG
+            Contact VI
           </h2>
           <p className="text-lg max-w-xl mx-auto leading-relaxed" style={{ color: 'rgba(255,255,255,0.7)' }}>
             Your first consultation is free and completely confidential. Reach out today.
@@ -230,7 +230,7 @@ export default function Contact() {
                   </div>
                   <h4 className="font-display text-xl font-bold mb-3" style={{ color: '#ffffff' }}>Message Received</h4>
                   <p className="text-sm leading-relaxed max-w-xs" style={{ color: 'rgba(255,255,255,0.7)' }}>
-                    Thank you for reaching out. A VIG representative will contact you within 24 hours.
+                    Thank you for reaching out. A VI representative will contact you within 24 hours.
                   </p>
                 </motion.div>
               ) : (

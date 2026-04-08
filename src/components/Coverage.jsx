@@ -54,7 +54,7 @@ export default function Coverage() {
             Our Coverage Area
           </h2>
           <p className="text-lg max-w-2xl mx-auto leading-relaxed" style={{ color: 'rgba(255,255,255,0.7)' }}>
-            Based in Miami, VIG operates wherever your case takes us — from statewide Florida operations to international engagements.
+            Based in Miami, VI operates wherever your case takes us — from statewide Florida operations to international engagements.
           </p>
           <div className="gold-divider w-24 mx-auto mt-8" />
         </motion.div>

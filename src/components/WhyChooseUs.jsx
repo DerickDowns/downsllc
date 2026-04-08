@@ -68,7 +68,7 @@ export default function WhyChooseUs() {
             Our Advantage
           </p>
           <h2 className="font-display text-4xl md:text-5xl font-bold mb-5" style={{ color: '#0a1628' }}>
-            Why Choose VIG?
+            Why Choose VI?
           </h2>
           <p className="text-lg max-w-xl mx-auto leading-relaxed" style={{ color: '#546e7a' }}>
             Four pillars that set us apart from every other investigation agency in Florida.
@@ -150,7 +150,7 @@ export default function WhyChooseUs() {
             Ready to get the truth?
           </p>
           <p className="text-base mb-8 max-w-lg mx-auto relative z-10" style={{ color: '#546e7a' }}>
-            Schedule a confidential, no-obligation consultation with VIG today. Your first call is free.
+            Schedule a confidential, no-obligation consultation with VI today. Your first call is free.
           </p>
           <a
             href="https://calendly.com/valdesinvgr"

@@ -51,13 +51,13 @@ export default function Footer() {
                 className="font-display text-3xl font-bold tracking-widest"
                 style={{ color: '#29b6f6' }}
               >
-                VIG
+                VI
               </span>
               <span
                 className="text-xs font-light tracking-[0.18em] uppercase mt-1"
                 style={{ color: 'rgba(255,255,255,0.5)' }}
               >
-                Valdes Investigation Group
+                Valdes Investigation
               </span>
             </a>
 
@@ -216,7 +216,7 @@ export default function Footer() {
       >
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24 py-6 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
           <p className="text-xs" style={{ color: 'rgba(255,255,255,0.35)' }}>
-            © 2025 Valdes Investigation Group. All Rights Reserved.
+            © 2025 Valdes Investigation. All Rights Reserved.
           </p>
           <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
             <span
