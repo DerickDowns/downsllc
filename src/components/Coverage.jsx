@@ -67,7 +67,7 @@ export default function Coverage() {
           className="relative rounded-2xl overflow-hidden mb-14"
           style={{
             border: '2px dashed rgba(0,151,167,0.3)',
-            backgroundColor: '#ffffff',
+            backgroundColor: '#0f3555',
           }}
         >
           <div className="w-full h-80 md:h-[420px] flex flex-col items-center justify-center gap-4">
