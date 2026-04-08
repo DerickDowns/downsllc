@@ -8,18 +8,25 @@ export default {
         sans: ['Inter', 'sans-serif'],
       },
       colors: {
-        gold: {
-          DEFAULT: '#c9a446',
-          hover: '#e0b84f',
-          light: '#d4af5a',
-          muted: 'rgba(201, 164, 70, 0.2)',
+        ocean: {
+          deep: '#0a3d62',
+          blue: '#1565c0',
+        },
+        teal: {
+          DEFAULT: '#0097a7',
+          accent: '#0097a7',
+          sky: '#29b6f6',
+        },
+        warm: {
+          white: '#fafcff',
+          sand: '#fef9f0',
+          card: '#ffffff',
         },
         navy: {
-          DEFAULT: '#0a0e1a',
-          secondary: '#111827',
-          card: '#1a2236',
-          deep: '#050810',
+          DEFAULT: '#0a1628',
+          secondary: '#546e7a',
         },
+        coral: '#ff6b35',
       },
     },
   },

@@ -42,16 +42,16 @@ export default function Stats() {
       ref={sectionRef}
       className="relative py-16 px-6 md:px-12 lg:px-24"
       style={{
-        backgroundColor: '#111827',
-        borderTop: '1px solid rgba(201,164,70,0.25)',
-        borderBottom: '1px solid rgba(201,164,70,0.25)',
+        backgroundColor: '#eff6ff',
+        borderTop: '1px solid rgba(30,64,175,0.2)',
+        borderBottom: '1px solid rgba(30,64,175,0.2)',
       }}
     >
       {/* Subtle background accent */}
       <div
-        className="absolute inset-0 opacity-5 pointer-events-none"
+        className="absolute inset-0 opacity-10 pointer-events-none"
         style={{
-          background: 'radial-gradient(ellipse at 50% 0%, rgba(201,164,70,0.4) 0%, transparent 70%)',
+          background: 'radial-gradient(ellipse at 50% 0%, rgba(30,64,175,0.3) 0%, transparent 70%)',
         }}
       />
 
@@ -64,12 +64,15 @@ export default function Stats() {
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: i * 0.12, duration: 0.6, ease: 'easeOut' }}
               className={`relative flex flex-col items-center text-center px-6 py-8 ${
-                i < stats.length - 1 ? 'lg:border-r border-gold/15' : ''
-              } ${i < 2 ? 'border-b border-gold/15 lg:border-b-0' : ''}`}
+                i < stats.length - 1 ? 'lg:border-r' : ''
+              } ${i < 2 ? 'border-b lg:border-b-0' : ''}`}
+              style={{
+                borderColor: 'rgba(30,64,175,0.15)',
+              }}
             >
               <div
                 className="font-display text-5xl md:text-6xl font-bold mb-2"
-                style={{ color: '#c9a446' }}
+                style={{ color: '#1e40af' }}
               >
                 {stat.value !== null ? (
                   <CountUp
@@ -81,10 +84,10 @@ export default function Stats() {
                   stat.display
                 )}
               </div>
-              <div className="text-white font-semibold text-sm tracking-wide mb-1">
+              <div className="font-semibold text-sm tracking-wide mb-1" style={{ color: '#0f172a' }}>
                 {stat.label}
               </div>
-              <div className="text-slate-500 text-xs">
+              <div className="text-xs" style={{ color: '#64748b' }}>
                 {stat.description}
               </div>
             </motion.div>

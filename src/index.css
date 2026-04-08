@@ -8,8 +8,8 @@
   }
 
   body {
-    background-color: #0a0e1a;
-    color: #ffffff;
+    background-color: #fafcff;
+    color: #0a1628;
     font-family: 'Inter', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -21,21 +21,21 @@
   }
 
   ::-webkit-scrollbar-track {
-    background: #0a0e1a;
+    background: #fafcff;
   }
 
   ::-webkit-scrollbar-thumb {
-    background: #c9a446;
+    background: #0097a7;
     border-radius: 3px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: #e0b84f;
+    background: #29b6f6;
   }
 
   * {
     scrollbar-width: thin;
-    scrollbar-color: #c9a446 #0a0e1a;
+    scrollbar-color: #0097a7 #fafcff;
   }
 }
 
@@ -44,12 +44,18 @@
     font-family: 'Playfair Display', serif;
   }
 
-  .gold-gradient {
-    background: linear-gradient(135deg, #c9a446 0%, #e0b84f 50%, #c9a446 100%);
+  /* Teal CTA gradient */
+  .teal-gradient {
+    background: linear-gradient(135deg, #0097a7 0%, #29b6f6 100%);
   }
 
-  .gold-text-gradient {
-    background: linear-gradient(135deg, #c9a446, #e0b84f);
+  /* Ocean deep gradient for hero/dark sections */
+  .ocean-gradient {
+    background: linear-gradient(135deg, #0a3d62 0%, #1565c0 60%, #0a3d62 100%);
+  }
+
+  .teal-text-gradient {
+    background: linear-gradient(135deg, #0097a7, #29b6f6);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -59,53 +65,73 @@
     @apply py-20 px-6 md:px-12 lg:px-24;
   }
 
+  /* White card with teal border */
   .card-base {
-    background-color: #1a2236;
-    border: 1px solid rgba(201, 164, 70, 0.2);
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 151, 167, 0.2);
     @apply rounded-lg;
   }
 
+  /* Primary CTA: teal → sky blue on hover */
   .btn-gold {
-    background-color: #c9a446;
-    color: #0a0e1a;
+    background-color: #0097a7;
+    color: #ffffff;
     @apply font-semibold px-6 py-3 rounded transition-all duration-300;
   }
 
   .btn-gold:hover {
-    background-color: #e0b84f;
+    background-color: #29b6f6;
     @apply shadow-lg;
-    box-shadow: 0 0 20px rgba(201, 164, 70, 0.35);
+    box-shadow: 0 0 20px rgba(0, 151, 167, 0.4);
   }
 
+  /* Outline CTA */
   .btn-outline-gold {
-    border: 1px solid #c9a446;
-    color: #c9a446;
+    border: 1px solid rgba(0, 151, 167, 0.8);
+    color: #0097a7;
     @apply font-semibold px-6 py-3 rounded transition-all duration-300;
   }
 
   .btn-outline-gold:hover {
-    background-color: rgba(201, 164, 70, 0.1);
-    box-shadow: 0 0 20px rgba(201, 164, 70, 0.2);
+    background-color: rgba(0, 151, 167, 0.08);
+    border-color: #29b6f6;
+    color: #29b6f6;
+    box-shadow: 0 0 20px rgba(0, 151, 167, 0.2);
+  }
+
+  /* Light outline for dark-bg sections */
+  .btn-outline-light {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: #ffffff;
+    @apply font-semibold px-6 py-3 rounded transition-all duration-300;
+  }
+
+  .btn-outline-light:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: #29b6f6;
+    color: #29b6f6;
+    box-shadow: 0 0 20px rgba(41, 182, 246, 0.25);
   }
 
   .input-gold {
-    background-color: #0a0e1a;
-    border: 1px solid rgba(201, 164, 70, 0.2);
-    color: #ffffff;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 151, 167, 0.25);
+    color: #0a1628;
     @apply w-full px-4 py-3 rounded transition-all duration-300 outline-none;
   }
 
   .input-gold:focus {
-    border-color: #c9a446;
-    box-shadow: 0 0 0 2px rgba(201, 164, 70, 0.15);
+    border-color: #0097a7;
+    box-shadow: 0 0 0 2px rgba(0, 151, 167, 0.15);
   }
 
   .input-gold::placeholder {
-    color: #475569;
+    color: #94a3b8;
   }
 
+  /* Teal divider */
   .gold-divider {
     height: 1px;
-    background: linear-gradient(to right, transparent, #c9a446, transparent);
+    background: linear-gradient(to right, transparent, #0097a7, transparent);
   }
 }

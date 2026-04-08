@@ -18,7 +18,7 @@ export default function About() {
     <section
       id="about"
       className="section-padding"
-      style={{ backgroundColor: '#111827' }}
+      style={{ backgroundColor: '#eff6ff' }}
       ref={ref}
     >
       <div className="max-w-7xl mx-auto">
@@ -31,30 +31,30 @@ export default function About() {
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
             className="relative"
           >
-            {/* Decorative gold accent */}
+            {/* Decorative blue accent blobs */}
             <div
               className="absolute -top-4 -left-4 w-24 h-24 rounded-full opacity-20 blur-2xl pointer-events-none"
-              style={{ backgroundColor: '#c9a446' }}
+              style={{ backgroundColor: '#1e40af' }}
             />
             <div
               className="absolute -bottom-4 -right-4 w-32 h-32 rounded-full opacity-10 blur-3xl pointer-events-none"
-              style={{ backgroundColor: '#c9a446' }}
+              style={{ backgroundColor: '#1e40af' }}
             />
 
             {/* Main image placeholder */}
             <div
               className="relative w-full aspect-[4/5] rounded-xl flex flex-col items-center justify-center"
               style={{
-                backgroundColor: '#1a2236',
-                border: '2px dashed rgba(201,164,70,0.3)',
+                backgroundColor: '#f0f6ff',
+                border: '2px dashed rgba(30,64,175,0.3)',
               }}
             >
               <div className="text-center px-8">
                 <div
                   className="w-20 h-20 rounded-full mx-auto mb-4 flex items-center justify-center"
-                  style={{ backgroundColor: 'rgba(201,164,70,0.1)', border: '1px solid rgba(201,164,70,0.25)' }}
+                  style={{ backgroundColor: 'rgba(30,64,175,0.08)', border: '1px solid rgba(30,64,175,0.2)' }}
                 >
-                  <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="rgba(201,164,70,0.6)" strokeWidth="1.5">
+                  <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="rgba(30,64,175,0.6)" strokeWidth="1.5">
                     <circle cx="12" cy="8" r="4" />
                     <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" />
                   </svg>
@@ -62,7 +62,7 @@ export default function About() {
                 <p className="text-slate-500 text-sm leading-relaxed">
                   [ Add headshot of Ms. Y. Valdes ]
                 </p>
-                <p className="text-slate-600 text-xs mt-2">
+                <p className="text-slate-400 text-xs mt-2">
                   Recommended: 800×1000px, professional portrait
                 </p>
               </div>
@@ -71,11 +71,11 @@ export default function About() {
               <div
                 className="absolute bottom-0 left-0 right-0 p-6 rounded-b-xl"
                 style={{
-                  background: 'linear-gradient(to top, rgba(10,14,26,0.97) 0%, rgba(10,14,26,0.7) 60%, transparent 100%)',
+                  background: 'linear-gradient(to top, rgba(13,27,62,0.97) 0%, rgba(13,27,62,0.7) 60%, transparent 100%)',
                 }}
               >
                 <p className="font-display font-bold text-white text-xl">Ms. Y. Valdes</p>
-                <p className="text-xs tracking-widest uppercase mt-1" style={{ color: '#c9a446' }}>
+                <p className="text-xs tracking-widest uppercase mt-1" style={{ color: '#3b82f6' }}>
                   Founder & Lead Investigator
                 </p>
               </div>
@@ -88,13 +88,13 @@ export default function About() {
               transition={{ delay: 0.5, duration: 0.5 }}
               className="absolute -right-5 top-12 rounded-xl px-5 py-4 shadow-2xl hidden md:block"
               style={{
-                backgroundColor: '#1a2236',
-                border: '1px solid rgba(201,164,70,0.3)',
+                backgroundColor: '#ffffff',
+                border: '1px solid rgba(30,64,175,0.25)',
               }}
             >
               <p className="text-xs text-slate-400 tracking-wide uppercase">Licensed Under</p>
-              <p className="font-display font-bold text-white text-sm mt-1">Chapter 493</p>
-              <p className="text-xs" style={{ color: '#c9a446' }}>Florida Statutes</p>
+              <p className="font-display font-bold text-sm mt-1" style={{ color: '#0f172a' }}>Chapter 493</p>
+              <p className="text-xs" style={{ color: '#2563eb' }}>Florida Statutes</p>
             </motion.div>
           </motion.div>
 
@@ -107,41 +107,41 @@ export default function About() {
             {/* Label */}
             <p
               className="text-xs font-semibold tracking-[0.3em] uppercase mb-4"
-              style={{ color: '#c9a446' }}
+              style={{ color: '#2563eb' }}
             >
               Our Story
             </p>
 
-            {/* Gold accent line */}
+            {/* Accent line */}
             <div
               className="w-12 h-0.5 mb-6"
-              style={{ backgroundColor: '#c9a446' }}
+              style={{ backgroundColor: '#1e40af' }}
             />
 
-            <h2 className="font-display text-4xl md:text-5xl font-bold text-white leading-tight mb-6">
+            <h2 className="font-display text-4xl md:text-5xl font-bold leading-tight mb-6" style={{ color: '#0f172a' }}>
               About Valdes<br />Investigation Group
             </h2>
 
-            <p className="text-slate-400 text-base leading-relaxed mb-5">
+            <p className="text-base leading-relaxed mb-5" style={{ color: '#475569' }}>
               Valdes Investigation Group (VIG) is Miami's premier private investigation agency, built on a foundation of integrity, professionalism, and an unwavering commitment to truth. Led by Ms. Y. Valdes, our agency has established itself as the most trusted name in Florida investigations.
             </p>
 
-            <p className="text-slate-400 text-base leading-relaxed mb-8">
+            <p className="text-base leading-relaxed mb-8" style={{ color: '#475569' }}>
               With over 20 years in business administration and 10 years of direct investigative experience, Ms. Valdes brings a unique combination of business acumen and field expertise to every case. From complex corporate fraud to sensitive domestic matters, VIG delivers results that clients can act on.
             </p>
 
             {/* Pull quote */}
             <div
               className="relative pl-6 py-4 mb-8"
-              style={{ borderLeft: '3px solid #c9a446' }}
+              style={{ borderLeft: '3px solid #2563eb' }}
             >
               <div
                 className="absolute top-0 left-4 font-display text-6xl leading-none opacity-20 -translate-y-2"
-                style={{ color: '#c9a446' }}
+                style={{ color: '#2563eb' }}
               >
                 "
               </div>
-              <p className="font-display text-lg italic text-white leading-relaxed relative z-10">
+              <p className="font-display text-lg italic leading-relaxed relative z-10" style={{ color: '#0f172a' }}>
                 We don't just investigate — we deliver truth you can act on.
               </p>
               <p className="text-xs text-slate-500 mt-2 tracking-wide">— Ms. Y. Valdes, Founder</p>
@@ -154,9 +154,9 @@ export default function About() {
                   <HiCheckBadge
                     size={18}
                     className="flex-shrink-0 mt-0.5"
-                    style={{ color: '#c9a446' }}
+                    style={{ color: '#2563eb' }}
                   />
-                  <span className="text-slate-300 text-sm">{item}</span>
+                  <span className="text-sm" style={{ color: '#374151' }}>{item}</span>
                 </li>
               ))}
             </ul>
@@ -164,19 +164,19 @@ export default function About() {
             {/* Meta stats row */}
             <div
               className="flex flex-wrap gap-8 pt-8"
-              style={{ borderTop: '1px solid rgba(201,164,70,0.15)' }}
+              style={{ borderTop: '1px solid rgba(30,64,175,0.15)' }}
             >
               <div>
-                <p className="font-display text-3xl font-bold" style={{ color: '#c9a446' }}>20+</p>
-                <p className="text-xs text-slate-400 mt-1 tracking-wide">Years Business Admin</p>
+                <p className="font-display text-3xl font-bold" style={{ color: '#1e40af' }}>20+</p>
+                <p className="text-xs mt-1 tracking-wide" style={{ color: '#64748b' }}>Years Business Admin</p>
               </div>
               <div>
-                <p className="font-display text-3xl font-bold" style={{ color: '#c9a446' }}>10+</p>
-                <p className="text-xs text-slate-400 mt-1 tracking-wide">Years Investigative Exp.</p>
+                <p className="font-display text-3xl font-bold" style={{ color: '#1e40af' }}>10+</p>
+                <p className="text-xs mt-1 tracking-wide" style={{ color: '#64748b' }}>Years Investigative Exp.</p>
               </div>
               <div>
-                <p className="font-display text-3xl font-bold" style={{ color: '#c9a446' }}>100%</p>
-                <p className="text-xs text-slate-400 mt-1 tracking-wide">Confidentiality Guaranteed</p>
+                <p className="font-display text-3xl font-bold" style={{ color: '#1e40af' }}>100%</p>
+                <p className="text-xs mt-1 tracking-wide" style={{ color: '#64748b' }}>Confidentiality Guaranteed</p>
               </div>
             </div>
           </motion.div>

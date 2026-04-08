@@ -22,36 +22,53 @@ export default function Hero() {
       id="home"
       className="relative min-h-screen flex flex-col justify-center overflow-hidden"
     >
-      {/* Background placeholder */}
+      {/* Background — deep ocean + warm city lights feel */}
       <div className="absolute inset-0 z-0">
         <div
-          className="w-full h-full flex flex-col items-center justify-center"
-          style={{ background: 'linear-gradient(135deg, #050810 0%, #0a0e1a 40%, #111827 100%)' }}
-        >
-          {/* Decorative grid overlay */}
+          className="w-full h-full"
+          style={{
+            background: 'linear-gradient(135deg, #0a3d62 0%, #0d2f4e 35%, #1565c0 70%, #0a3d62 100%)',
+          }}
+        />
+
+        {/* Subtle warm glow — city lights at night */}
+        <div
+          className="absolute inset-0 opacity-30"
+          style={{
+            background: 'radial-gradient(ellipse at 80% 60%, rgba(255,107,53,0.18) 0%, transparent 55%), radial-gradient(ellipse at 20% 80%, rgba(41,182,246,0.2) 0%, transparent 50%)',
+          }}
+        />
+
+        {/* Decorative grid overlay */}
+        <div
+          className="absolute inset-0 opacity-5"
+          style={{
+            backgroundImage: `linear-gradient(rgba(41,182,246,0.6) 1px, transparent 1px), linear-gradient(90deg, rgba(41,182,246,0.6) 1px, transparent 1px)`,
+            backgroundSize: '60px 60px',
+          }}
+        />
+
+        {/* Image placeholder block */}
+        <div className="absolute inset-0 flex items-end justify-end p-8 opacity-30">
           <div
-            className="absolute inset-0 opacity-5"
-            style={{
-              backgroundImage: `linear-gradient(rgba(201,164,70,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(201,164,70,0.5) 1px, transparent 1px)`,
-              backgroundSize: '60px 60px',
-            }}
-          />
-          {/* Image placeholder block */}
-          <div className="absolute inset-0 flex items-end justify-end p-8 opacity-30">
-            <div
-              className="border-2 border-dashed rounded-lg flex items-center justify-center p-6 text-center max-w-xs"
-              style={{ borderColor: 'rgba(201,164,70,0.4)' }}
-            >
-              <p className="text-slate-500 text-xs leading-relaxed">
-                [ Hero Background —<br />Add your image or video here ]
-              </p>
-            </div>
+            className="border-2 border-dashed rounded-lg flex items-center justify-center p-6 text-center max-w-xs"
+            style={{ borderColor: 'rgba(41,182,246,0.35)' }}
+          >
+            <p className="text-slate-400 text-xs leading-relaxed">
+              [ Hero Background —<br />Add your image or video here ]
+            </p>
           </div>
         </div>
 
         {/* Gradient overlays */}
-        <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/85 to-transparent z-10" />
-        <div className="absolute inset-0 bg-gradient-to-t from-navy via-transparent to-navy/60 z-10" />
+        <div
+          className="absolute inset-0 z-10"
+          style={{ background: 'linear-gradient(to right, #0a3d62, rgba(10,61,98,0.88), transparent)' }}
+        />
+        <div
+          className="absolute inset-0 z-10"
+          style={{ background: 'linear-gradient(to top, #0a3d62, transparent, rgba(10,61,98,0.5))' }}
+        />
       </div>
 
       {/* Content */}
@@ -64,8 +81,9 @@ export default function Hero() {
           variants={fadeUp}
           className="mb-8"
         >
-          <div className="inline-flex items-center gap-2 border rounded-full px-4 py-2 text-xs font-medium tracking-widest uppercase"
-            style={{ borderColor: 'rgba(201,164,70,0.35)', color: '#c9a446', backgroundColor: 'rgba(201,164,70,0.07)' }}
+          <div
+            className="inline-flex items-center gap-2 border rounded-full px-4 py-2 text-xs font-medium tracking-widest uppercase"
+            style={{ borderColor: 'rgba(0,151,167,0.5)', color: '#29b6f6', backgroundColor: 'rgba(0,151,167,0.12)' }}
           >
             <HiShieldCheck size={14} />
             Licensed · Insured · Confidential
@@ -76,10 +94,10 @@ export default function Hero() {
         <motion.div custom={0.15} initial="hidden" animate="visible" variants={fadeUp}>
           <h1 className="font-display leading-none mb-2">
             <span className="block text-7xl md:text-9xl font-bold text-white tracking-tight">
-              Truth<span style={{ color: '#c9a446' }}>.</span>
+              Truth<span style={{ color: '#0097a7' }}>.</span>
             </span>
             <span className="block text-7xl md:text-9xl font-bold text-white tracking-tight">
-              Delivered<span style={{ color: '#c9a446' }}>.</span>
+              Delivered<span style={{ color: '#0097a7' }}>.</span>
             </span>
           </h1>
         </motion.div>
@@ -90,7 +108,8 @@ export default function Hero() {
           initial="hidden"
           animate="visible"
           variants={fadeUp}
-          className="mt-8 text-lg md:text-xl text-slate-300 max-w-xl font-light leading-relaxed"
+          className="mt-8 text-lg md:text-xl max-w-xl font-light leading-relaxed"
+          style={{ color: '#b0d4f1' }}
         >
           Miami's most trusted private investigation agency for over four decades.
         </motion.p>
@@ -114,7 +133,7 @@ export default function Hero() {
           <a
             href="#services"
             onClick={(e) => { e.preventDefault(); handleScroll() }}
-            className="btn-outline-gold text-center text-sm tracking-wider uppercase inline-flex items-center justify-center gap-2 px-8 py-4"
+            className="btn-outline-light text-center text-sm tracking-wider uppercase inline-flex items-center justify-center gap-2 px-8 py-4"
           >
             View Our Services
           </a>
@@ -130,8 +149,8 @@ export default function Hero() {
         >
           {['45+ Years Experience', '$5M Insured', '54+ Five-Star Reviews', 'FL Licensed Chapter 493'].map((item) => (
             <div key={item} className="flex items-center gap-2">
-              <div className="w-1 h-1 rounded-full" style={{ backgroundColor: '#c9a446' }} />
-              <span className="text-xs text-slate-400 tracking-wide">{item}</span>
+              <div className="w-1 h-1 rounded-full" style={{ backgroundColor: '#0097a7' }} />
+              <span className="text-xs tracking-wide" style={{ color: '#b0d4f1' }}>{item}</span>
             </div>
           ))}
         </motion.div>
@@ -143,10 +162,11 @@ export default function Hero() {
         animate={{ opacity: 1 }}
         transition={{ delay: 1.2, duration: 0.6 }}
         onClick={handleScroll}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2 text-slate-500 hover:text-gold transition-colors group"
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2 transition-colors group"
+        style={{ color: '#0097a7' }}
         aria-label="Scroll down"
       >
-        <span className="text-xs tracking-widest uppercase font-light">Scroll</span>
+        <span className="text-xs tracking-widest uppercase font-light" style={{ color: '#b0d4f1' }}>Scroll</span>
         <motion.div
           animate={{ y: [0, 8, 0] }}
           transition={{ repeat: Infinity, duration: 1.8, ease: 'easeInOut' }}

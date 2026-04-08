@@ -87,36 +87,37 @@ function ServiceCard({ service, index }) {
       whileHover={{ y: -6, transition: { duration: 0.25 } }}
       className="group relative flex flex-col p-7 rounded-xl cursor-default"
       style={{
-        backgroundColor: '#1a2236',
-        border: '1px solid rgba(201,164,70,0.18)',
+        backgroundColor: '#f8fafc',
+        border: '1px solid rgba(30,64,175,0.12)',
         transition: 'box-shadow 0.3s ease, border-color 0.3s ease',
       }}
       onMouseEnter={(e) => {
-        e.currentTarget.style.borderColor = 'rgba(201,164,70,0.55)'
-        e.currentTarget.style.boxShadow = '0 0 30px rgba(201,164,70,0.1), 0 8px 32px rgba(0,0,0,0.4)'
+        e.currentTarget.style.borderColor = 'rgba(37,99,235,0.45)'
+        e.currentTarget.style.boxShadow = '0 0 30px rgba(37,99,235,0.12), 0 8px 32px rgba(30,64,175,0.08)'
       }}
       onMouseLeave={(e) => {
-        e.currentTarget.style.borderColor = 'rgba(201,164,70,0.18)'
+        e.currentTarget.style.borderColor = 'rgba(30,64,175,0.12)'
         e.currentTarget.style.boxShadow = 'none'
       }}
     >
       {/* Icon */}
       <div
         className="w-12 h-12 rounded-lg flex items-center justify-center mb-5 flex-shrink-0"
-        style={{ backgroundColor: 'rgba(201,164,70,0.12)', border: '1px solid rgba(201,164,70,0.25)' }}
+        style={{ backgroundColor: 'rgba(30,64,175,0.08)', border: '1px solid rgba(30,64,175,0.2)' }}
       >
-        <Icon size={22} style={{ color: '#c9a446' }} />
+        <Icon size={22} style={{ color: '#2563eb' }} />
       </div>
 
       {/* Title */}
       <h3
-        className="font-display font-bold text-lg text-white mb-3 leading-tight"
+        className="font-display font-bold text-lg mb-3 leading-tight"
+        style={{ color: '#0f172a' }}
       >
         {service.title}
       </h3>
 
       {/* Description */}
-      <p className="text-slate-400 text-sm leading-relaxed mb-5 flex-grow">
+      <p className="text-sm leading-relaxed mb-5 flex-grow" style={{ color: '#475569' }}>
         {service.description}
       </p>
 
@@ -127,9 +128,9 @@ function ServiceCard({ service, index }) {
             key={tag}
             className="text-xs px-2.5 py-1 rounded-full"
             style={{
-              color: '#c9a446',
-              backgroundColor: 'rgba(201,164,70,0.1)',
-              border: '1px solid rgba(201,164,70,0.2)',
+              color: '#1e40af',
+              backgroundColor: 'rgba(30,64,175,0.08)',
+              border: '1px solid rgba(30,64,175,0.2)',
             }}
           >
             {tag}
@@ -145,7 +146,7 @@ function ServiceCard({ service, index }) {
           document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
         }}
         className="inline-flex items-center gap-1.5 text-xs font-semibold tracking-widest uppercase"
-        style={{ color: '#c9a446' }}
+        style={{ color: '#2563eb' }}
       >
         <span>Inquire Now</span>
         <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
@@ -159,7 +160,7 @@ export default function Services() {
   const inView = useInView(ref, { once: true, margin: '-80px' })
 
   return (
-    <section id="services" className="section-padding" style={{ backgroundColor: '#0a0e1a' }}>
+    <section id="services" className="section-padding" style={{ backgroundColor: '#ffffff' }}>
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <motion.div
@@ -171,14 +172,14 @@ export default function Services() {
         >
           <p
             className="text-xs font-semibold tracking-[0.3em] uppercase mb-4"
-            style={{ color: '#c9a446' }}
+            style={{ color: '#2563eb' }}
           >
             What We Do
           </p>
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-white mb-5">
+          <h2 className="font-display text-4xl md:text-5xl font-bold mb-5" style={{ color: '#0f172a' }}>
             Our Investigative Services
           </h2>
-          <p className="text-slate-400 text-lg max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg max-w-2xl mx-auto leading-relaxed" style={{ color: '#475569' }}>
             Comprehensive investigation solutions tailored to your specific needs — delivered with discretion, precision, and results.
           </p>
           <div className="gold-divider w-24 mx-auto mt-8" />
@@ -203,7 +204,7 @@ export default function Services() {
           transition={{ delay: 0.8, duration: 0.6 }}
           className="text-center mt-14"
         >
-          <p className="text-slate-400 text-sm mb-6">
+          <p className="text-sm mb-6" style={{ color: '#475569' }}>
             Don't see what you need? We handle complex, custom investigation requirements.
           </p>
           <a

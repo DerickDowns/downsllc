@@ -40,17 +40,17 @@ export default function WhyChooseUs() {
   return (
     <section
       className="section-padding relative overflow-hidden"
-      style={{ backgroundColor: '#0a0e1a' }}
+      style={{ backgroundColor: '#ffffff' }}
       ref={ref}
     >
-      {/* Background decorative elements */}
+      {/* Background decorative blobs */}
       <div
         className="absolute top-0 right-0 w-96 h-96 rounded-full blur-3xl opacity-5 pointer-events-none"
-        style={{ backgroundColor: '#c9a446' }}
+        style={{ backgroundColor: '#1e40af' }}
       />
       <div
         className="absolute bottom-0 left-0 w-64 h-64 rounded-full blur-3xl opacity-5 pointer-events-none"
-        style={{ backgroundColor: '#c9a446' }}
+        style={{ backgroundColor: '#1e40af' }}
       />
 
       <div className="relative max-w-7xl mx-auto">
@@ -63,14 +63,14 @@ export default function WhyChooseUs() {
         >
           <p
             className="text-xs font-semibold tracking-[0.3em] uppercase mb-4"
-            style={{ color: '#c9a446' }}
+            style={{ color: '#2563eb' }}
           >
             Our Advantage
           </p>
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-white mb-5">
+          <h2 className="font-display text-4xl md:text-5xl font-bold mb-5" style={{ color: '#0f172a' }}>
             Why Choose VIG?
           </h2>
-          <p className="text-slate-400 text-lg max-w-xl mx-auto leading-relaxed">
+          <p className="text-lg max-w-xl mx-auto leading-relaxed" style={{ color: '#475569' }}>
             Four pillars that set us apart from every other investigation agency in Florida.
           </p>
           <div className="gold-divider w-24 mx-auto mt-8" />
@@ -88,11 +88,11 @@ export default function WhyChooseUs() {
                 transition={{ delay: i * 0.15, duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
                 className="flex gap-7"
               >
-                {/* Number */}
+                {/* Ghost number */}
                 <div className="flex-shrink-0">
                   <span
                     className="font-display text-5xl md:text-6xl font-bold leading-none select-none"
-                    style={{ color: 'rgba(201,164,70,0.18)', letterSpacing: '-0.02em' }}
+                    style={{ color: 'rgba(30,64,175,0.1)', letterSpacing: '-0.02em' }}
                   >
                     {reason.number}
                   </span>
@@ -103,22 +103,22 @@ export default function WhyChooseUs() {
                   <div className="flex items-center gap-3 mb-3">
                     <div
                       className="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0"
-                      style={{ backgroundColor: 'rgba(201,164,70,0.1)', border: '1px solid rgba(201,164,70,0.2)' }}
+                      style={{ backgroundColor: 'rgba(30,64,175,0.08)', border: '1px solid rgba(30,64,175,0.2)' }}
                     >
-                      <Icon size={17} style={{ color: '#c9a446' }} />
+                      <Icon size={17} style={{ color: '#1e40af' }} />
                     </div>
-                    <h3 className="font-display font-bold text-xl text-white">
+                    <h3 className="font-display font-bold text-xl" style={{ color: '#0f172a' }}>
                       {reason.title}
                     </h3>
                   </div>
-                  <p className="text-slate-400 text-sm leading-relaxed">
+                  <p className="text-sm leading-relaxed" style={{ color: '#475569' }}>
                     {reason.description}
                   </p>
 
                   {/* Subtle divider */}
                   <div
                     className="w-8 h-px mt-5"
-                    style={{ backgroundColor: 'rgba(201,164,70,0.35)' }}
+                    style={{ backgroundColor: 'rgba(30,64,175,0.3)' }}
                   />
                 </div>
               </motion.div>
@@ -126,29 +126,30 @@ export default function WhyChooseUs() {
           })}
         </div>
 
-        {/* Bottom bar */}
+        {/* Bottom CTA card */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.7, duration: 0.6 }}
           className="mt-20 rounded-2xl p-10 text-center relative overflow-hidden"
           style={{
-            backgroundColor: '#1a2236',
-            border: '1px solid rgba(201,164,70,0.2)',
+            backgroundColor: '#eff6ff',
+            border: '1px solid rgba(30,64,175,0.2)',
           }}
         >
           <div
             className="absolute inset-0 opacity-5 pointer-events-none"
             style={{
-              background: 'radial-gradient(ellipse at 50% 0%, rgba(201,164,70,0.6) 0%, transparent 70%)',
+              background: 'radial-gradient(ellipse at 50% 0%, rgba(30,64,175,0.6) 0%, transparent 70%)',
             }}
           />
           <p
-            className="font-display text-2xl md:text-3xl font-bold text-white mb-4 relative z-10"
+            className="font-display text-2xl md:text-3xl font-bold mb-4 relative z-10"
+            style={{ color: '#0f172a' }}
           >
             Ready to get the truth?
           </p>
-          <p className="text-slate-400 text-base mb-8 max-w-lg mx-auto relative z-10">
+          <p className="text-base mb-8 max-w-lg mx-auto relative z-10" style={{ color: '#475569' }}>
             Schedule a confidential, no-obligation consultation with VIG today. Your first call is free.
           </p>
           <a

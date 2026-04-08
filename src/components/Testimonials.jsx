@@ -30,7 +30,7 @@ function StarRating({ count = 5 }) {
   return (
     <div className="flex gap-1">
       {Array.from({ length: count }).map((_, i) => (
-        <HiStar key={i} size={16} style={{ color: '#c9a446' }} />
+        <HiStar key={i} size={16} style={{ color: '#2563eb' }} />
       ))}
     </div>
   )
@@ -43,7 +43,7 @@ export default function Testimonials() {
   return (
     <section
       className="section-padding"
-      style={{ backgroundColor: '#111827' }}
+      style={{ backgroundColor: '#eff6ff' }}
       ref={ref}
     >
       <div className="max-w-7xl mx-auto">
@@ -56,14 +56,14 @@ export default function Testimonials() {
         >
           <p
             className="text-xs font-semibold tracking-[0.3em] uppercase mb-4"
-            style={{ color: '#c9a446' }}
+            style={{ color: '#2563eb' }}
           >
             Client Testimonials
           </p>
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-white mb-5">
+          <h2 className="font-display text-4xl md:text-5xl font-bold mb-5" style={{ color: '#0f172a' }}>
             What Our Clients Say
           </h2>
-          <p className="text-slate-400 text-base max-w-xl mx-auto leading-relaxed">
+          <p className="text-base max-w-xl mx-auto leading-relaxed" style={{ color: '#475569' }}>
             Real results for real people. Our reputation is built on the trust of every client we've served.
           </p>
         </motion.div>
@@ -78,20 +78,20 @@ export default function Testimonials() {
           <div
             className="inline-flex items-center gap-4 px-6 py-3 rounded-full"
             style={{
-              backgroundColor: '#1a2236',
-              border: '1px solid rgba(201,164,70,0.25)',
+              backgroundColor: '#f8fafc',
+              border: '1px solid rgba(30,64,175,0.2)',
             }}
           >
             <div className="flex gap-0.5">
               {[1, 2, 3, 4, 5].map((s) => (
-                <HiStar key={s} size={18} style={{ color: '#c9a446' }} />
+                <HiStar key={s} size={18} style={{ color: '#2563eb' }} />
               ))}
             </div>
-            <span className="text-white font-semibold text-sm">5.0</span>
-            <div className="w-px h-4" style={{ backgroundColor: 'rgba(201,164,70,0.25)' }} />
-            <span className="text-slate-400 text-sm">54+ Verified Reviews</span>
-            <div className="w-px h-4" style={{ backgroundColor: 'rgba(201,164,70,0.25)' }} />
-            <span className="text-xs font-semibold tracking-widest uppercase" style={{ color: '#c9a446' }}>
+            <span className="font-semibold text-sm" style={{ color: '#0f172a' }}>5.0</span>
+            <div className="w-px h-4" style={{ backgroundColor: 'rgba(30,64,175,0.2)' }} />
+            <span className="text-sm" style={{ color: '#475569' }}>54+ Verified Reviews</span>
+            <div className="w-px h-4" style={{ backgroundColor: 'rgba(30,64,175,0.2)' }} />
+            <span className="text-xs font-semibold tracking-widest uppercase" style={{ color: '#2563eb' }}>
               Trustpilot
             </span>
           </div>
@@ -107,14 +107,14 @@ export default function Testimonials() {
               transition={{ delay: 0.2 + i * 0.15, duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
               className="relative flex flex-col p-8 rounded-xl"
               style={{
-                backgroundColor: '#1a2236',
-                border: '1px solid rgba(201,164,70,0.18)',
+                backgroundColor: '#ffffff',
+                border: '1px solid rgba(30,64,175,0.12)',
               }}
             >
               {/* Giant quote mark */}
               <div
-                className="absolute top-4 right-6 font-display text-7xl leading-none opacity-15 select-none pointer-events-none"
-                style={{ color: '#c9a446' }}
+                className="absolute top-4 right-6 font-display text-7xl leading-none select-none pointer-events-none"
+                style={{ color: '#1e40af', opacity: 0.12 }}
               >
                 "
               </div>
@@ -123,20 +123,20 @@ export default function Testimonials() {
               <StarRating count={t.rating} />
 
               {/* Quote */}
-              <p className="text-slate-300 text-base leading-relaxed mt-5 mb-6 flex-grow relative z-10 italic">
+              <p className="text-base leading-relaxed mt-5 mb-6 flex-grow relative z-10 italic" style={{ color: '#374151' }}>
                 "{t.quote}"
               </p>
 
               {/* Divider */}
               <div
                 className="w-full h-px mb-5"
-                style={{ backgroundColor: 'rgba(201,164,70,0.15)' }}
+                style={{ backgroundColor: 'rgba(30,64,175,0.12)' }}
               />
 
               {/* Attribution */}
               <div>
-                <p className="text-white font-semibold text-sm">{t.client}</p>
-                <p className="text-xs mt-0.5" style={{ color: '#c9a446' }}>
+                <p className="font-semibold text-sm" style={{ color: '#0f172a' }}>{t.client}</p>
+                <p className="text-xs mt-0.5" style={{ color: '#2563eb' }}>
                   {t.location}
                 </p>
               </div>
@@ -151,7 +151,7 @@ export default function Testimonials() {
           transition={{ delay: 0.7, duration: 0.6 }}
           className="text-center mt-14"
         >
-          <p className="text-slate-500 text-sm mb-5">
+          <p className="text-sm mb-5" style={{ color: '#64748b' }}>
             Join the clients who trusted VIG to deliver the truth.
           </p>
           <a
