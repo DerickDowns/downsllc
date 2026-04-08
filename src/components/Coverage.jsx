@@ -33,7 +33,7 @@ export default function Coverage() {
     <section
       id="coverage"
       className="section-padding"
-      style={{ backgroundColor: '#ffffff' }}
+      style={{ backgroundColor: '#0a3d62' }}
       ref={ref}
     >
       <div className="max-w-7xl mx-auto">
@@ -46,14 +46,14 @@ export default function Coverage() {
         >
           <p
             className="text-xs font-semibold tracking-[0.3em] uppercase mb-4"
-            style={{ color: '#2563eb' }}
+            style={{ color: '#0097a7' }}
           >
             Where We Operate
           </p>
-          <h2 className="font-display text-4xl md:text-5xl font-bold mb-5" style={{ color: '#0f172a' }}>
+          <h2 className="font-display text-4xl md:text-5xl font-bold mb-5" style={{ color: '#0a1628' }}>
             Our Coverage Area
           </h2>
-          <p className="text-lg max-w-2xl mx-auto leading-relaxed" style={{ color: '#475569' }}>
+          <p className="text-lg max-w-2xl mx-auto leading-relaxed" style={{ color: '#546e7a' }}>
             Based in Miami, VIG operates wherever your case takes us — from statewide Florida operations to international engagements.
           </p>
           <div className="gold-divider w-24 mx-auto mt-8" />
@@ -66,8 +66,8 @@ export default function Coverage() {
           transition={{ delay: 0.2, duration: 0.7 }}
           className="relative rounded-2xl overflow-hidden mb-14"
           style={{
-            border: '2px dashed rgba(30,64,175,0.3)',
-            backgroundColor: '#f8fafc',
+            border: '2px dashed rgba(0,151,167,0.3)',
+            backgroundColor: '#ffffff',
           }}
         >
           <div className="w-full h-80 md:h-[420px] flex flex-col items-center justify-center gap-4">
@@ -76,8 +76,8 @@ export default function Coverage() {
               className="absolute inset-0 opacity-5"
               style={{
                 backgroundImage: `
-                  linear-gradient(rgba(37,99,235,0.5) 1px, transparent 1px),
-                  linear-gradient(90deg, rgba(37,99,235,0.5) 1px, transparent 1px)
+                  linear-gradient(rgba(0,151,167,0.5) 1px, transparent 1px),
+                  linear-gradient(90deg, rgba(0,151,167,0.5) 1px, transparent 1px)
                 `,
                 backgroundSize: '40px 40px',
               }}
@@ -90,15 +90,15 @@ export default function Coverage() {
                 <div className="relative">
                   <div
                     className="w-3 h-3 rounded-full"
-                    style={{ backgroundColor: '#2563eb' }}
+                    style={{ backgroundColor: '#0097a7' }}
                   />
                   <div
                     className="absolute inset-0 rounded-full animate-ping"
-                    style={{ backgroundColor: 'rgba(37,99,235,0.4)' }}
+                    style={{ backgroundColor: 'rgba(0,151,167,0.4)' }}
                   />
                   <div
                     className="absolute -top-6 -left-6 text-xs whitespace-nowrap font-semibold"
-                    style={{ color: '#2563eb' }}
+                    style={{ color: '#0097a7' }}
                   >
                     Miami, FL
                   </div>
@@ -106,7 +106,7 @@ export default function Coverage() {
               </div>
             </div>
 
-            <HiGlobeAmericas size={52} style={{ color: 'rgba(30,64,175,0.3)' }} className="relative z-10" />
+            <HiGlobeAmericas size={52} style={{ color: 'rgba(0,151,167,0.3)' }} className="relative z-10" />
             <div className="text-center relative z-10">
               <p className="text-sm font-medium mb-1" style={{ color: '#94a3b8' }}>
                 [ Add Google Maps embed or custom coverage map here ]
@@ -129,17 +129,17 @@ export default function Coverage() {
               className="flex flex-col items-center text-center p-7 rounded-xl"
               style={{
                 backgroundColor: '#ffffff',
-                border: '1px solid rgba(30,64,175,0.12)',
+                border: '1px solid rgba(0,151,167,0.18)',
               }}
             >
               <span className="text-4xl mb-4">{area.icon}</span>
               <h3
                 className="font-display font-bold text-lg mb-2"
-                style={{ color: '#0f172a' }}
+                style={{ color: '#0a1628' }}
               >
                 {area.label}
               </h3>
-              <p className="text-xs leading-relaxed" style={{ color: '#64748b' }}>
+              <p className="text-xs leading-relaxed" style={{ color: '#546e7a' }}>
                 {area.description}
               </p>
             </motion.div>
@@ -156,13 +156,13 @@ export default function Coverage() {
           <div
             className="inline-flex items-center gap-3 px-6 py-4 rounded-xl"
             style={{
-              backgroundColor: 'rgba(30,64,175,0.05)',
-              border: '1px solid rgba(30,64,175,0.15)',
+              backgroundColor: 'rgba(0,151,167,0.05)',
+              border: '1px solid rgba(0,151,167,0.15)',
             }}
           >
-            <HiMapPin size={18} style={{ color: '#2563eb' }} />
-            <p className="text-sm" style={{ color: '#374151' }}>
-              <span className="font-semibold" style={{ color: '#0f172a' }}>Headquartered in Miami, FL</span>
+            <HiMapPin size={18} style={{ color: '#0097a7' }} />
+            <p className="text-sm" style={{ color: '#0a1628' }}>
+              <span className="font-semibold" style={{ color: '#0a1628' }}>Headquartered in Miami, FL</span>
               {' '}— 12855 SW 136th Ave Ste 102, Miami, FL 33186
             </p>
           </div>

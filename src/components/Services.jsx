@@ -88,36 +88,36 @@ function ServiceCard({ service }) {
       className="group relative flex flex-col p-7 rounded-xl cursor-default"
       style={{
         backgroundColor: '#ffffff',
-        border: '1px solid rgba(30,64,175,0.18)',
+        border: '1px solid rgba(0,151,167,0.18)',
         transition: 'box-shadow 0.3s ease, border-color 0.3s ease',
       }}
       onMouseEnter={(e) => {
-        e.currentTarget.style.borderColor = 'rgba(37,99,235,0.45)'
-        e.currentTarget.style.boxShadow = '0 0 30px rgba(30,64,175,0.18), 0 8px 32px rgba(30,64,175,0.08)'
+        e.currentTarget.style.borderColor = 'rgba(0,151,167,0.5)'
+        e.currentTarget.style.boxShadow = '0 0 30px rgba(0,151,167,0.18), 0 8px 32px rgba(0,151,167,0.08)'
       }}
       onMouseLeave={(e) => {
-        e.currentTarget.style.borderColor = 'rgba(30,64,175,0.18)'
+        e.currentTarget.style.borderColor = 'rgba(0,151,167,0.18)'
         e.currentTarget.style.boxShadow = 'none'
       }}
     >
       {/* Icon */}
       <div
         className="w-12 h-12 rounded-lg flex items-center justify-center mb-5 flex-shrink-0"
-        style={{ backgroundColor: 'rgba(30,64,175,0.08)', border: '1px solid rgba(30,64,175,0.2)' }}
+        style={{ backgroundColor: 'rgba(0,151,167,0.08)', border: '1px solid rgba(0,151,167,0.22)' }}
       >
-        <Icon size={22} style={{ color: '#2563eb' }} />
+        <Icon size={22} style={{ color: '#0097a7' }} />
       </div>
 
       {/* Title */}
       <h3
         className="font-display font-bold text-lg mb-3 leading-tight"
-        style={{ color: '#0f172a' }}
+        style={{ color: '#0a1628' }}
       >
         {service.title}
       </h3>
 
       {/* Description */}
-      <p className="text-sm leading-relaxed mb-5 flex-grow" style={{ color: '#475569' }}>
+      <p className="text-sm leading-relaxed mb-5 flex-grow" style={{ color: '#546e7a' }}>
         {service.description}
       </p>
 
@@ -128,9 +128,9 @@ function ServiceCard({ service }) {
             key={tag}
             className="text-xs px-2.5 py-1 rounded-full"
             style={{
-              color: '#2563eb',
-              backgroundColor: 'rgba(30,64,175,0.08)',
-              border: '1px solid rgba(30,64,175,0.2)',
+              color: '#0097a7',
+              backgroundColor: 'rgba(0,151,167,0.08)',
+              border: '1px solid rgba(0,151,167,0.22)',
             }}
           >
             {tag}
@@ -146,7 +146,7 @@ function ServiceCard({ service }) {
           document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
         }}
         className="inline-flex items-center gap-1.5 text-xs font-semibold tracking-widest uppercase"
-        style={{ color: '#2563eb' }}
+        style={{ color: '#0097a7' }}
       >
         <span>Inquire Now</span>
         <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
@@ -172,14 +172,14 @@ export default function Services() {
         >
           <p
             className="text-xs font-semibold tracking-[0.3em] uppercase mb-4"
-            style={{ color: '#2563eb' }}
+            style={{ color: '#0097a7' }}
           >
             What We Do
           </p>
-          <h2 className="font-display text-4xl md:text-5xl font-bold mb-5" style={{ color: '#0f172a' }}>
+          <h2 className="font-display text-4xl md:text-5xl font-bold mb-5" style={{ color: '#0a1628' }}>
             Our Investigative Services
           </h2>
-          <p className="text-lg max-w-2xl mx-auto leading-relaxed" style={{ color: '#475569' }}>
+          <p className="text-lg max-w-2xl mx-auto leading-relaxed" style={{ color: '#546e7a' }}>
             Comprehensive investigation solutions tailored to your specific needs — delivered with discretion, precision, and results.
           </p>
           <div className="gold-divider w-24 mx-auto mt-8" />
@@ -204,7 +204,7 @@ export default function Services() {
           transition={{ delay: 0.8, duration: 0.6 }}
           className="text-center mt-14"
         >
-          <p className="text-sm mb-6" style={{ color: '#475569' }}>
+          <p className="text-sm mb-6" style={{ color: '#546e7a' }}>
             Don't see what you need? We handle complex, custom investigation requirements.
           </p>
           <a

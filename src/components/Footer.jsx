@@ -49,7 +49,7 @@ export default function Footer() {
             >
               <span
                 className="font-display text-3xl font-bold tracking-widest"
-                style={{ color: '#3b82f6' }}
+                style={{ color: '#29b6f6' }}
               >
                 VIG
               </span>
@@ -110,7 +110,7 @@ export default function Footer() {
                   >
                     <span
                       className="w-4 h-px transition-all duration-300 group-hover:w-6"
-                      style={{ backgroundColor: '#3b82f6' }}
+                      style={{ backgroundColor: '#29b6f6' }}
                     />
                     {link.label}
                   </a>
@@ -159,7 +159,7 @@ export default function Footer() {
                   href="tel:7867177412"
                   className="flex items-start gap-3 group"
                 >
-                  <HiPhone size={15} style={{ color: '#3b82f6' }} className="flex-shrink-0 mt-0.5" />
+                  <HiPhone size={15} style={{ color: '#29b6f6' }} className="flex-shrink-0 mt-0.5" />
                   <span
                     className="text-sm transition-colors duration-200"
                     style={{ color: 'rgba(255,255,255,0.5)' }}
@@ -175,7 +175,7 @@ export default function Footer() {
                   href="mailto:clientservice@valdesinvgr.com"
                   className="flex items-start gap-3 group"
                 >
-                  <HiEnvelope size={15} style={{ color: '#3b82f6' }} className="flex-shrink-0 mt-0.5" />
+                  <HiEnvelope size={15} style={{ color: '#29b6f6' }} className="flex-shrink-0 mt-0.5" />
                   <span
                     className="text-sm transition-colors duration-200 break-all"
                     style={{ color: 'rgba(255,255,255,0.5)' }}
@@ -188,7 +188,7 @@ export default function Footer() {
               </li>
               <li>
                 <div className="flex items-start gap-3">
-                  <HiMapPin size={15} style={{ color: '#3b82f6' }} className="flex-shrink-0 mt-0.5" />
+                  <HiMapPin size={15} style={{ color: '#29b6f6' }} className="flex-shrink-0 mt-0.5" />
                   <address className="text-sm not-italic leading-relaxed" style={{ color: 'rgba(255,255,255,0.5)' }}>
                     12855 SW 136th Ave Ste 102<br />
                     Miami, FL 33186

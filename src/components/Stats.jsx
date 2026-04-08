@@ -42,16 +42,16 @@ export default function Stats() {
       ref={sectionRef}
       className="relative py-16 px-6 md:px-12 lg:px-24"
       style={{
-        backgroundColor: '#eff6ff',
-        borderTop: '1px solid rgba(30,64,175,0.2)',
-        borderBottom: '1px solid rgba(30,64,175,0.2)',
+        backgroundColor: '#fef9f0',
+        borderTop: '1px solid rgba(0,151,167,0.22)',
+        borderBottom: '1px solid rgba(0,151,167,0.22)',
       }}
     >
       {/* Subtle background accent */}
       <div
         className="absolute inset-0 opacity-10 pointer-events-none"
         style={{
-          background: 'radial-gradient(ellipse at 50% 0%, rgba(30,64,175,0.3) 0%, transparent 70%)',
+          background: 'radial-gradient(ellipse at 50% 0%, rgba(0,151,167,0.3) 0%, transparent 70%)',
         }}
       />
 
@@ -67,12 +67,12 @@ export default function Stats() {
                 i < stats.length - 1 ? 'lg:border-r' : ''
               } ${i < 2 ? 'border-b lg:border-b-0' : ''}`}
               style={{
-                borderColor: 'rgba(30,64,175,0.15)',
+                borderColor: 'rgba(0,151,167,0.15)',
               }}
             >
               <div
                 className="font-display text-5xl md:text-6xl font-bold mb-2"
-                style={{ color: '#1e40af' }}
+                style={{ color: '#1565c0' }}
               >
                 {stat.value !== null ? (
                   <CountUp
@@ -84,10 +84,10 @@ export default function Stats() {
                   stat.display
                 )}
               </div>
-              <div className="font-semibold text-sm tracking-wide mb-1" style={{ color: '#0f172a' }}>
+              <div className="font-semibold text-sm tracking-wide mb-1" style={{ color: '#0a1628' }}>
                 {stat.label}
               </div>
-              <div className="text-xs" style={{ color: '#64748b' }}>
+              <div className="text-xs" style={{ color: '#546e7a' }}>
                 {stat.description}
               </div>
             </motion.div>

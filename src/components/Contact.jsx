@@ -41,7 +41,7 @@ export default function Contact() {
     <section
       id="contact"
       className="section-padding"
-      style={{ backgroundColor: '#eff6ff' }}
+      style={{ backgroundColor: '#fef9f0' }}
       ref={ref}
     >
       <div className="max-w-7xl mx-auto">
@@ -54,14 +54,14 @@ export default function Contact() {
         >
           <p
             className="text-xs font-semibold tracking-[0.3em] uppercase mb-4"
-            style={{ color: '#2563eb' }}
+            style={{ color: '#0097a7' }}
           >
             Get In Touch
           </p>
-          <h2 className="font-display text-4xl md:text-5xl font-bold mb-5" style={{ color: '#0f172a' }}>
+          <h2 className="font-display text-4xl md:text-5xl font-bold mb-5" style={{ color: '#0a1628' }}>
             Contact VIG
           </h2>
-          <p className="text-lg max-w-xl mx-auto leading-relaxed" style={{ color: '#475569' }}>
+          <p className="text-lg max-w-xl mx-auto leading-relaxed" style={{ color: '#546e7a' }}>
             Your first consultation is free and completely confidential. Reach out today.
           </p>
           <div className="gold-divider w-24 mx-auto mt-8" />
@@ -78,19 +78,19 @@ export default function Contact() {
             <div
               className="rounded-2xl p-8 mb-8 relative overflow-hidden"
               style={{
-                background: 'linear-gradient(135deg, rgba(30,64,175,0.08) 0%, rgba(30,64,175,0.03) 100%)',
-                border: '1px solid rgba(30,64,175,0.25)',
+                background: 'linear-gradient(135deg, rgba(0,151,167,0.08) 0%, rgba(30,64,175,0.03) 100%)',
+                border: '1px solid rgba(0,151,167,0.25)',
               }}
             >
               <div
                 className="absolute top-0 right-0 w-32 h-32 rounded-full blur-3xl opacity-20 pointer-events-none"
-                style={{ backgroundColor: '#1e40af' }}
+                style={{ backgroundColor: '#1565c0' }}
               />
-              <HiCalendarDays size={32} style={{ color: '#2563eb' }} className="mb-4" />
-              <h3 className="font-display text-2xl font-bold mb-2" style={{ color: '#0f172a' }}>
+              <HiCalendarDays size={32} style={{ color: '#0097a7' }} className="mb-4" />
+              <h3 className="font-display text-2xl font-bold mb-2" style={{ color: '#0a1628' }}>
                 Book a Free Consultation
               </h3>
-              <p className="text-sm leading-relaxed mb-6" style={{ color: '#475569' }}>
+              <p className="text-sm leading-relaxed mb-6" style={{ color: '#546e7a' }}>
                 Schedule a confidential, no-obligation call with Ms. Y. Valdes or one of our senior investigators.
               </p>
               <a
@@ -112,17 +112,17 @@ export default function Contact() {
               >
                 <div
                   className="w-11 h-11 rounded-lg flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:scale-105"
-                  style={{ backgroundColor: 'rgba(30,64,175,0.08)', border: '1px solid rgba(30,64,175,0.2)' }}
+                  style={{ backgroundColor: 'rgba(0,151,167,0.08)', border: '1px solid rgba(0,151,167,0.22)' }}
                 >
-                  <HiPhone size={18} style={{ color: '#2563eb' }} />
+                  <HiPhone size={18} style={{ color: '#0097a7' }} />
                 </div>
                 <div>
-                  <p className="text-xs tracking-widest uppercase mb-0.5" style={{ color: '#475569' }}>Phone</p>
+                  <p className="text-xs tracking-widest uppercase mb-0.5" style={{ color: '#546e7a' }}>Phone</p>
                   <p
                     className="font-semibold text-lg transition-colors"
-                    style={{ color: '#0f172a' }}
-                    onMouseEnter={(e) => { e.currentTarget.style.color = '#1e40af' }}
-                    onMouseLeave={(e) => { e.currentTarget.style.color = '#0f172a' }}
+                    style={{ color: '#0a1628' }}
+                    onMouseEnter={(e) => { e.currentTarget.style.color = '#1565c0' }}
+                    onMouseLeave={(e) => { e.currentTarget.style.color = '#0a1628' }}
                   >
                     (786) 717-7412
                   </p>
@@ -135,17 +135,17 @@ export default function Contact() {
               >
                 <div
                   className="w-11 h-11 rounded-lg flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:scale-105"
-                  style={{ backgroundColor: 'rgba(30,64,175,0.08)', border: '1px solid rgba(30,64,175,0.2)' }}
+                  style={{ backgroundColor: 'rgba(0,151,167,0.08)', border: '1px solid rgba(0,151,167,0.22)' }}
                 >
-                  <HiEnvelope size={18} style={{ color: '#2563eb' }} />
+                  <HiEnvelope size={18} style={{ color: '#0097a7' }} />
                 </div>
                 <div>
-                  <p className="text-xs tracking-widest uppercase mb-0.5" style={{ color: '#475569' }}>Email</p>
+                  <p className="text-xs tracking-widest uppercase mb-0.5" style={{ color: '#546e7a' }}>Email</p>
                   <p
                     className="font-semibold transition-colors break-all"
-                    style={{ color: '#0f172a' }}
-                    onMouseEnter={(e) => { e.currentTarget.style.color = '#1e40af' }}
-                    onMouseLeave={(e) => { e.currentTarget.style.color = '#0f172a' }}
+                    style={{ color: '#0a1628' }}
+                    onMouseEnter={(e) => { e.currentTarget.style.color = '#1565c0' }}
+                    onMouseLeave={(e) => { e.currentTarget.style.color = '#0a1628' }}
                   >
                     clientservice@valdesinvgr.com
                   </p>
@@ -155,28 +155,28 @@ export default function Contact() {
               <div className="flex items-start gap-4">
                 <div
                   className="w-11 h-11 rounded-lg flex items-center justify-center flex-shrink-0"
-                  style={{ backgroundColor: 'rgba(30,64,175,0.08)', border: '1px solid rgba(30,64,175,0.2)' }}
+                  style={{ backgroundColor: 'rgba(0,151,167,0.08)', border: '1px solid rgba(0,151,167,0.22)' }}
                 >
-                  <HiMapPin size={18} style={{ color: '#2563eb' }} />
+                  <HiMapPin size={18} style={{ color: '#0097a7' }} />
                 </div>
                 <div>
-                  <p className="text-xs tracking-widest uppercase mb-0.5" style={{ color: '#475569' }}>Address</p>
-                  <p className="font-semibold" style={{ color: '#0f172a' }}>12855 SW 136th Ave Ste 102</p>
-                  <p className="text-sm" style={{ color: '#475569' }}>Miami, FL 33186</p>
+                  <p className="text-xs tracking-widest uppercase mb-0.5" style={{ color: '#546e7a' }}>Address</p>
+                  <p className="font-semibold" style={{ color: '#0a1628' }}>12855 SW 136th Ave Ste 102</p>
+                  <p className="text-sm" style={{ color: '#546e7a' }}>Miami, FL 33186</p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
                 <div
                   className="w-11 h-11 rounded-lg flex items-center justify-center flex-shrink-0"
-                  style={{ backgroundColor: 'rgba(30,64,175,0.08)', border: '1px solid rgba(30,64,175,0.2)' }}
+                  style={{ backgroundColor: 'rgba(0,151,167,0.08)', border: '1px solid rgba(0,151,167,0.22)' }}
                 >
-                  <HiClock size={18} style={{ color: '#2563eb' }} />
+                  <HiClock size={18} style={{ color: '#0097a7' }} />
                 </div>
                 <div>
-                  <p className="text-xs tracking-widest uppercase mb-0.5" style={{ color: '#475569' }}>Hours</p>
-                  <p className="font-semibold" style={{ color: '#0f172a' }}>Mon – Fri: 8:00 AM – 6:00 PM</p>
-                  <p className="text-sm" style={{ color: '#475569' }}>Sat: By Appointment · Sun: Emergency Only</p>
+                  <p className="text-xs tracking-widest uppercase mb-0.5" style={{ color: '#546e7a' }}>Hours</p>
+                  <p className="font-semibold" style={{ color: '#0a1628' }}>Mon – Fri: 8:00 AM – 6:00 PM</p>
+                  <p className="text-sm" style={{ color: '#546e7a' }}>Sat: By Appointment · Sun: Emergency Only</p>
                 </div>
               </div>
             </div>
@@ -186,11 +186,11 @@ export default function Contact() {
               className="mt-8 flex items-center gap-3 px-5 py-4 rounded-lg"
               style={{
                 backgroundColor: 'rgba(30,64,175,0.04)',
-                border: '1px solid rgba(30,64,175,0.12)',
+                border: '1px solid rgba(0,151,167,0.18)',
               }}
             >
               <span className="text-lg flex-shrink-0">🔒</span>
-              <p className="text-xs leading-relaxed" style={{ color: '#64748b' }}>
+              <p className="text-xs leading-relaxed" style={{ color: '#546e7a' }}>
                 All inquiries are handled with strict confidentiality. Your information is never shared.
               </p>
             </div>
@@ -206,13 +206,13 @@ export default function Contact() {
               className="rounded-2xl p-8"
               style={{
                 backgroundColor: '#ffffff',
-                border: '1px solid rgba(30,64,175,0.15)',
+                border: '1px solid rgba(0,151,167,0.15)',
               }}
             >
-              <h3 className="font-display text-2xl font-bold mb-2" style={{ color: '#0f172a' }}>
+              <h3 className="font-display text-2xl font-bold mb-2" style={{ color: '#0a1628' }}>
                 Send Us a Message
               </h3>
-              <p className="text-sm mb-8" style={{ color: '#475569' }}>
+              <p className="text-sm mb-8" style={{ color: '#546e7a' }}>
                 We'll respond within 24 hours. All communications are confidential.
               </p>
 
@@ -224,12 +224,12 @@ export default function Contact() {
                 >
                   <div
                     className="w-16 h-16 rounded-full flex items-center justify-center mb-5"
-                    style={{ backgroundColor: 'rgba(30,64,175,0.1)', border: '1px solid rgba(30,64,175,0.25)' }}
+                    style={{ backgroundColor: 'rgba(30,64,175,0.1)', border: '1px solid rgba(0,151,167,0.25)' }}
                   >
-                    <HiPaperAirplane size={28} style={{ color: '#2563eb' }} />
+                    <HiPaperAirplane size={28} style={{ color: '#0097a7' }} />
                   </div>
-                  <h4 className="font-display text-xl font-bold mb-3" style={{ color: '#0f172a' }}>Message Received</h4>
-                  <p className="text-sm leading-relaxed max-w-xs" style={{ color: '#475569' }}>
+                  <h4 className="font-display text-xl font-bold mb-3" style={{ color: '#0a1628' }}>Message Received</h4>
+                  <p className="text-sm leading-relaxed max-w-xs" style={{ color: '#546e7a' }}>
                     Thank you for reaching out. A VIG representative will contact you within 24 hours.
                   </p>
                 </motion.div>
@@ -238,8 +238,8 @@ export default function Contact() {
                   {/* Name + Email row */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                     <div>
-                      <label className="block text-xs font-semibold tracking-widest uppercase mb-2" style={{ color: '#475569' }}>
-                        Full Name <span style={{ color: '#2563eb' }}>*</span>
+                      <label className="block text-xs font-semibold tracking-widest uppercase mb-2" style={{ color: '#546e7a' }}>
+                        Full Name <span style={{ color: '#0097a7' }}>*</span>
                       </label>
                       <input
                         type="text"
@@ -252,8 +252,8 @@ export default function Contact() {
                       />
                     </div>
                     <div>
-                      <label className="block text-xs font-semibold tracking-widest uppercase mb-2" style={{ color: '#475569' }}>
-                        Email <span style={{ color: '#2563eb' }}>*</span>
+                      <label className="block text-xs font-semibold tracking-widest uppercase mb-2" style={{ color: '#546e7a' }}>
+                        Email <span style={{ color: '#0097a7' }}>*</span>
                       </label>
                       <input
                         type="email"
@@ -269,7 +269,7 @@ export default function Contact() {
 
                   {/* Phone */}
                   <div>
-                    <label className="block text-xs font-semibold tracking-widest uppercase mb-2" style={{ color: '#475569' }}>
+                    <label className="block text-xs font-semibold tracking-widest uppercase mb-2" style={{ color: '#546e7a' }}>
                       Phone Number
                     </label>
                     <input
@@ -284,8 +284,8 @@ export default function Contact() {
 
                   {/* Service type */}
                   <div>
-                    <label className="block text-xs font-semibold tracking-widest uppercase mb-2" style={{ color: '#475569' }}>
-                      Service Type <span style={{ color: '#2563eb' }}>*</span>
+                    <label className="block text-xs font-semibold tracking-widest uppercase mb-2" style={{ color: '#546e7a' }}>
+                      Service Type <span style={{ color: '#0097a7' }}>*</span>
                     </label>
                     <select
                       name="service"
@@ -299,7 +299,7 @@ export default function Contact() {
                         <option
                           key={opt}
                           value={opt === 'Select a Service...' ? '' : opt}
-                          style={{ backgroundColor: '#ffffff', color: '#0f172a' }}
+                          style={{ backgroundColor: '#ffffff', color: '#0a1628' }}
                         >
                           {opt}
                         </option>
@@ -309,8 +309,8 @@ export default function Contact() {
 
                   {/* Message */}
                   <div>
-                    <label className="block text-xs font-semibold tracking-widest uppercase mb-2" style={{ color: '#475569' }}>
-                      Brief Description <span style={{ color: '#2563eb' }}>*</span>
+                    <label className="block text-xs font-semibold tracking-widest uppercase mb-2" style={{ color: '#546e7a' }}>
+                      Brief Description <span style={{ color: '#0097a7' }}>*</span>
                     </label>
                     <textarea
                       name="message"
@@ -332,7 +332,7 @@ export default function Contact() {
                     Send Message
                   </button>
 
-                  <p className="text-xs text-center pt-1" style={{ color: '#64748b' }}>
+                  <p className="text-xs text-center pt-1" style={{ color: '#546e7a' }}>
                     By submitting, you agree to our confidentiality policy. We never share your information.
                   </p>
                 </form>
