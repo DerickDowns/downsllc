@@ -31,7 +31,7 @@ export default function Footer() {
   return (
     <footer
       style={{
-        backgroundColor: '#0d1b3e',
+        backgroundColor: '#0a3d62',
         borderTop: '1px solid rgba(255,255,255,0.1)',
       }}
     >
@@ -66,8 +66,8 @@ export default function Footer() {
             </p>
 
             {/* Tagline */}
-            <p className="font-display italic text-base" style={{ color: '#93c5fd' }}>
-              <span style={{ color: '#60a5fa' }}>"Truth. Delivered."</span>
+            <p className="font-display italic text-base" style={{ color: '#29b6f6' }}>
+              <span style={{ color: '#29b6f6' }}>"Truth. Delivered."</span>
             </p>
 
             {/* Social */}
@@ -80,7 +80,7 @@ export default function Footer() {
                 style={{
                   backgroundColor: 'rgba(255,255,255,0.08)',
                   border: '1px solid rgba(255,255,255,0.12)',
-                  color: '#60a5fa',
+                  color: '#29b6f6',
                 }}
                 aria-label="Facebook"
               >
@@ -93,7 +93,7 @@ export default function Footer() {
           <div>
             <h4
               className="text-xs font-semibold tracking-[0.25em] uppercase mb-5"
-              style={{ color: '#60a5fa' }}
+              style={{ color: '#29b6f6' }}
             >
               Navigation
             </h4>
@@ -123,7 +123,7 @@ export default function Footer() {
           <div>
             <h4
               className="text-xs font-semibold tracking-[0.25em] uppercase mb-5"
-              style={{ color: '#60a5fa' }}
+              style={{ color: '#29b6f6' }}
             >
               Services
             </h4>
@@ -149,7 +149,7 @@ export default function Footer() {
           <div>
             <h4
               className="text-xs font-semibold tracking-[0.25em] uppercase mb-5"
-              style={{ color: '#60a5fa' }}
+              style={{ color: '#29b6f6' }}
             >
               Contact
             </h4>
@@ -222,7 +222,7 @@ export default function Footer() {
             <span
               className="text-xs px-3 py-1.5 rounded-full"
               style={{
-                color: '#93c5fd',
+                color: '#29b6f6',
                 backgroundColor: 'rgba(255,255,255,0.05)',
                 border: '1px solid rgba(255,255,255,0.1)',
               }}
@@ -232,7 +232,7 @@ export default function Footer() {
             <span
               className="text-xs px-3 py-1.5 rounded-full"
               style={{
-                color: '#93c5fd',
+                color: '#29b6f6',
                 backgroundColor: 'rgba(255,255,255,0.05)',
                 border: '1px solid rgba(255,255,255,0.1)',
               }}

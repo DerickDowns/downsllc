@@ -50,10 +50,10 @@ export default function Coverage() {
           >
             Where We Operate
           </p>
-          <h2 className="font-display text-4xl md:text-5xl font-bold mb-5" style={{ color: '#0a1628' }}>
+          <h2 className="font-display text-4xl md:text-5xl font-bold mb-5 text-white">
             Our Coverage Area
           </h2>
-          <p className="text-lg max-w-2xl mx-auto leading-relaxed" style={{ color: '#546e7a' }}>
+          <p className="text-lg max-w-2xl mx-auto leading-relaxed" style={{ color: 'rgba(255,255,255,0.7)' }}>
             Based in Miami, VIG operates wherever your case takes us — from statewide Florida operations to international engagements.
           </p>
           <div className="gold-divider w-24 mx-auto mt-8" />
@@ -108,10 +108,10 @@ export default function Coverage() {
 
             <HiGlobeAmericas size={52} style={{ color: 'rgba(0,151,167,0.3)' }} className="relative z-10" />
             <div className="text-center relative z-10">
-              <p className="text-sm font-medium mb-1" style={{ color: '#94a3b8' }}>
+              <p className="text-sm font-medium mb-1" style={{ color: 'rgba(255,255,255,0.5)' }}>
                 [ Add Google Maps embed or custom coverage map here ]
               </p>
-              <p className="text-xs" style={{ color: '#94a3b8' }}>
+              <p className="text-xs" style={{ color: 'rgba(255,255,255,0.5)' }}>
                 Recommended: Google Maps embed with service areas highlighted
               </p>
             </div>
@@ -161,8 +161,8 @@ export default function Coverage() {
             }}
           >
             <HiMapPin size={18} style={{ color: '#0097a7' }} />
-            <p className="text-sm" style={{ color: '#0a1628' }}>
-              <span className="font-semibold" style={{ color: '#0a1628' }}>Headquartered in Miami, FL</span>
+            <p className="text-sm text-white">
+              <span className="font-semibold text-white">Headquartered in Miami, FL</span>
               {' '}— 12855 SW 136th Ave Ste 102, Miami, FL 33186
             </p>
           </div>

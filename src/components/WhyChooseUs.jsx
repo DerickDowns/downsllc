@@ -40,7 +40,7 @@ export default function WhyChooseUs() {
   return (
     <section
       className="section-padding relative overflow-hidden"
-      style={{ backgroundColor: '#ffffff' }}
+      style={{ backgroundColor: '#fafcff' }}
       ref={ref}
     >
       {/* Background decorative blobs */}

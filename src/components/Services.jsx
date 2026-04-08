@@ -160,7 +160,7 @@ export default function Services() {
   const inView = useInView(ref, { once: true, margin: '-80px' })
 
   return (
-    <section id="services" className="section-padding" style={{ backgroundColor: '#ffffff' }}>
+    <section id="services" className="section-padding" style={{ backgroundColor: '#fafcff' }}>
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <motion.div
