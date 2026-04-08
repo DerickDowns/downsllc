@@ -79,7 +79,7 @@ const cardVariants = {
   },
 }
 
-function ServiceCard({ service, index }) {
+function ServiceCard({ service }) {
   const Icon = service.icon
   return (
     <motion.div
@@ -87,16 +87,16 @@ function ServiceCard({ service, index }) {
       whileHover={{ y: -6, transition: { duration: 0.25 } }}
       className="group relative flex flex-col p-7 rounded-xl cursor-default"
       style={{
-        backgroundColor: '#f8fafc',
-        border: '1px solid rgba(30,64,175,0.12)',
+        backgroundColor: '#ffffff',
+        border: '1px solid rgba(30,64,175,0.18)',
         transition: 'box-shadow 0.3s ease, border-color 0.3s ease',
       }}
       onMouseEnter={(e) => {
         e.currentTarget.style.borderColor = 'rgba(37,99,235,0.45)'
-        e.currentTarget.style.boxShadow = '0 0 30px rgba(37,99,235,0.12), 0 8px 32px rgba(30,64,175,0.08)'
+        e.currentTarget.style.boxShadow = '0 0 30px rgba(30,64,175,0.18), 0 8px 32px rgba(30,64,175,0.08)'
       }}
       onMouseLeave={(e) => {
-        e.currentTarget.style.borderColor = 'rgba(30,64,175,0.12)'
+        e.currentTarget.style.borderColor = 'rgba(30,64,175,0.18)'
         e.currentTarget.style.boxShadow = 'none'
       }}
     >
@@ -128,7 +128,7 @@ function ServiceCard({ service, index }) {
             key={tag}
             className="text-xs px-2.5 py-1 rounded-full"
             style={{
-              color: '#1e40af',
+              color: '#2563eb',
               backgroundColor: 'rgba(30,64,175,0.08)',
               border: '1px solid rgba(30,64,175,0.2)',
             }}
@@ -138,7 +138,7 @@ function ServiceCard({ service, index }) {
         ))}
       </div>
 
-      {/* Learn more */}
+      {/* Inquire link */}
       <a
         href="#contact"
         onClick={(e) => {
@@ -192,8 +192,8 @@ export default function Services() {
           animate={inView ? 'visible' : 'hidden'}
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5"
         >
-          {services.map((service, i) => (
-            <ServiceCard key={service.title} service={service} index={i} />
+          {services.map((service) => (
+            <ServiceCard key={service.title} service={service} />
           ))}
         </motion.div>
 

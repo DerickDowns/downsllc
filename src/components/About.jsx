@@ -34,7 +34,7 @@ export default function About() {
             {/* Decorative blue accent blobs */}
             <div
               className="absolute -top-4 -left-4 w-24 h-24 rounded-full opacity-20 blur-2xl pointer-events-none"
-              style={{ backgroundColor: '#1e40af' }}
+              style={{ backgroundColor: '#2563eb' }}
             />
             <div
               className="absolute -bottom-4 -right-4 w-32 h-32 rounded-full opacity-10 blur-3xl pointer-events-none"
@@ -52,7 +52,7 @@ export default function About() {
               <div className="text-center px-8">
                 <div
                   className="w-20 h-20 rounded-full mx-auto mb-4 flex items-center justify-center"
-                  style={{ backgroundColor: 'rgba(30,64,175,0.08)', border: '1px solid rgba(30,64,175,0.2)' }}
+                  style={{ backgroundColor: 'rgba(30,64,175,0.08)', border: '1px solid rgba(30,64,175,0.25)' }}
                 >
                   <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="rgba(30,64,175,0.6)" strokeWidth="1.5">
                     <circle cx="12" cy="8" r="4" />
@@ -63,7 +63,7 @@ export default function About() {
                   [ Add headshot of Ms. Y. Valdes ]
                 </p>
                 <p className="text-slate-400 text-xs mt-2">
-                  Recommended: 800×1000px, professional portrait
+                  Recommended: 800x1000px, professional portrait
                 </p>
               </div>
 
@@ -115,7 +115,7 @@ export default function About() {
             {/* Accent line */}
             <div
               className="w-12 h-0.5 mb-6"
-              style={{ backgroundColor: '#1e40af' }}
+              style={{ backgroundColor: '#2563eb' }}
             />
 
             <h2 className="font-display text-4xl md:text-5xl font-bold leading-tight mb-6" style={{ color: '#0f172a' }}>
@@ -168,15 +168,15 @@ export default function About() {
             >
               <div>
                 <p className="font-display text-3xl font-bold" style={{ color: '#1e40af' }}>20+</p>
-                <p className="text-xs mt-1 tracking-wide" style={{ color: '#64748b' }}>Years Business Admin</p>
+                <p className="text-xs mt-1 tracking-wide" style={{ color: '#475569' }}>Years Business Admin</p>
               </div>
               <div>
                 <p className="font-display text-3xl font-bold" style={{ color: '#1e40af' }}>10+</p>
-                <p className="text-xs mt-1 tracking-wide" style={{ color: '#64748b' }}>Years Investigative Exp.</p>
+                <p className="text-xs mt-1 tracking-wide" style={{ color: '#475569' }}>Years Investigative Exp.</p>
               </div>
               <div>
                 <p className="font-display text-3xl font-bold" style={{ color: '#1e40af' }}>100%</p>
-                <p className="text-xs mt-1 tracking-wide" style={{ color: '#64748b' }}>Confidentiality Guaranteed</p>
+                <p className="text-xs mt-1 tracking-wide" style={{ color: '#475569' }}>Confidentiality Guaranteed</p>
               </div>
             </div>
           </motion.div>

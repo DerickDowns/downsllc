@@ -31,8 +31,8 @@ export default function Footer() {
   return (
     <footer
       style={{
-        backgroundColor: '#050810',
-        borderTop: '1px solid rgba(201,164,70,0.2)',
+        backgroundColor: '#0d1b3e',
+        borderTop: '1px solid rgba(255,255,255,0.1)',
       }}
     >
       {/* Main footer body */}
@@ -49,22 +49,25 @@ export default function Footer() {
             >
               <span
                 className="font-display text-3xl font-bold tracking-widest"
-                style={{ color: '#c9a446' }}
+                style={{ color: '#3b82f6' }}
               >
                 VIG
               </span>
-              <span className="text-xs font-light tracking-[0.18em] text-slate-400 uppercase mt-1">
+              <span
+                className="text-xs font-light tracking-[0.18em] uppercase mt-1"
+                style={{ color: 'rgba(255,255,255,0.5)' }}
+              >
                 Valdes Investigation Group
               </span>
             </a>
 
-            <p className="text-slate-500 text-sm leading-relaxed mb-6">
+            <p className="text-sm leading-relaxed mb-4" style={{ color: 'rgba(255,255,255,0.5)' }}>
               Miami's premier private investigation agency. Truth, delivered with integrity, precision, and discretion.
             </p>
 
             {/* Tagline */}
-            <p className="font-display italic text-lg" style={{ color: '#c9a446' }}>
-              "Truth. Delivered."
+            <p className="font-display italic text-base" style={{ color: '#93c5fd' }}>
+              <span style={{ color: '#60a5fa' }}>"Truth. Delivered."</span>
             </p>
 
             {/* Social */}
@@ -75,9 +78,9 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-105"
                 style={{
-                  backgroundColor: 'rgba(201,164,70,0.1)',
-                  border: '1px solid rgba(201,164,70,0.2)',
-                  color: '#c9a446',
+                  backgroundColor: 'rgba(255,255,255,0.08)',
+                  border: '1px solid rgba(255,255,255,0.12)',
+                  color: '#60a5fa',
                 }}
                 aria-label="Facebook"
               >
@@ -90,7 +93,7 @@ export default function Footer() {
           <div>
             <h4
               className="text-xs font-semibold tracking-[0.25em] uppercase mb-5"
-              style={{ color: '#c9a446' }}
+              style={{ color: '#60a5fa' }}
             >
               Navigation
             </h4>
@@ -100,11 +103,14 @@ export default function Footer() {
                   <a
                     href={link.href}
                     onClick={(e) => { e.preventDefault(); handleScrollTo(link.href) }}
-                    className="text-slate-400 text-sm hover:text-white transition-colors duration-200 flex items-center gap-2 group"
+                    className="text-sm flex items-center gap-2 group transition-colors duration-200"
+                    style={{ color: 'rgba(255,255,255,0.5)' }}
+                    onMouseEnter={(e) => { e.currentTarget.style.color = '#ffffff' }}
+                    onMouseLeave={(e) => { e.currentTarget.style.color = 'rgba(255,255,255,0.5)' }}
                   >
                     <span
                       className="w-4 h-px transition-all duration-300 group-hover:w-6"
-                      style={{ backgroundColor: '#c9a446' }}
+                      style={{ backgroundColor: '#3b82f6' }}
                     />
                     {link.label}
                   </a>
@@ -117,7 +123,7 @@ export default function Footer() {
           <div>
             <h4
               className="text-xs font-semibold tracking-[0.25em] uppercase mb-5"
-              style={{ color: '#c9a446' }}
+              style={{ color: '#60a5fa' }}
             >
               Services
             </h4>
@@ -127,7 +133,10 @@ export default function Footer() {
                   <a
                     href="#services"
                     onClick={(e) => { e.preventDefault(); handleScrollTo('#services') }}
-                    className="text-slate-400 text-xs leading-relaxed hover:text-white transition-colors duration-200"
+                    className="text-xs leading-relaxed transition-colors duration-200"
+                    style={{ color: 'rgba(255,255,255,0.5)' }}
+                    onMouseEnter={(e) => { e.currentTarget.style.color = '#ffffff' }}
+                    onMouseLeave={(e) => { e.currentTarget.style.color = 'rgba(255,255,255,0.5)' }}
                   >
                     {svc}
                   </a>
@@ -140,7 +149,7 @@ export default function Footer() {
           <div>
             <h4
               className="text-xs font-semibold tracking-[0.25em] uppercase mb-5"
-              style={{ color: '#c9a446' }}
+              style={{ color: '#60a5fa' }}
             >
               Contact
             </h4>
@@ -150,8 +159,13 @@ export default function Footer() {
                   href="tel:7867177412"
                   className="flex items-start gap-3 group"
                 >
-                  <HiPhone size={15} style={{ color: '#c9a446' }} className="flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-400 text-sm group-hover:text-white transition-colors">
+                  <HiPhone size={15} style={{ color: '#3b82f6' }} className="flex-shrink-0 mt-0.5" />
+                  <span
+                    className="text-sm transition-colors duration-200"
+                    style={{ color: 'rgba(255,255,255,0.5)' }}
+                    onMouseEnter={(e) => { e.currentTarget.style.color = '#ffffff' }}
+                    onMouseLeave={(e) => { e.currentTarget.style.color = 'rgba(255,255,255,0.5)' }}
+                  >
                     (786) 717-7412
                   </span>
                 </a>
@@ -161,16 +175,21 @@ export default function Footer() {
                   href="mailto:clientservice@valdesinvgr.com"
                   className="flex items-start gap-3 group"
                 >
-                  <HiEnvelope size={15} style={{ color: '#c9a446' }} className="flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-400 text-sm group-hover:text-white transition-colors break-all">
+                  <HiEnvelope size={15} style={{ color: '#3b82f6' }} className="flex-shrink-0 mt-0.5" />
+                  <span
+                    className="text-sm transition-colors duration-200 break-all"
+                    style={{ color: 'rgba(255,255,255,0.5)' }}
+                    onMouseEnter={(e) => { e.currentTarget.style.color = '#ffffff' }}
+                    onMouseLeave={(e) => { e.currentTarget.style.color = 'rgba(255,255,255,0.5)' }}
+                  >
                     clientservice@valdesinvgr.com
                   </span>
                 </a>
               </li>
               <li>
                 <div className="flex items-start gap-3">
-                  <HiMapPin size={15} style={{ color: '#c9a446' }} className="flex-shrink-0 mt-0.5" />
-                  <address className="text-slate-400 text-sm not-italic leading-relaxed">
+                  <HiMapPin size={15} style={{ color: '#3b82f6' }} className="flex-shrink-0 mt-0.5" />
+                  <address className="text-sm not-italic leading-relaxed" style={{ color: 'rgba(255,255,255,0.5)' }}>
                     12855 SW 136th Ave Ste 102<br />
                     Miami, FL 33186
                   </address>
@@ -193,19 +212,19 @@ export default function Footer() {
 
       {/* Bottom bar */}
       <div
-        style={{ borderTop: '1px solid rgba(201,164,70,0.12)' }}
+        style={{ borderTop: '1px solid rgba(255,255,255,0.08)' }}
       >
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24 py-6 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
-          <p className="text-slate-600 text-xs">
+          <p className="text-xs" style={{ color: 'rgba(255,255,255,0.35)' }}>
             © 2025 Valdes Investigation Group. All Rights Reserved.
           </p>
           <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
             <span
               className="text-xs px-3 py-1.5 rounded-full"
               style={{
-                color: '#c9a446',
-                backgroundColor: 'rgba(201,164,70,0.08)',
-                border: '1px solid rgba(201,164,70,0.18)',
+                color: '#93c5fd',
+                backgroundColor: 'rgba(255,255,255,0.05)',
+                border: '1px solid rgba(255,255,255,0.1)',
               }}
             >
               Licensed under Chapter 493, Florida Statutes
@@ -213,9 +232,9 @@ export default function Footer() {
             <span
               className="text-xs px-3 py-1.5 rounded-full"
               style={{
-                color: '#c9a446',
-                backgroundColor: 'rgba(201,164,70,0.08)',
-                border: '1px solid rgba(201,164,70,0.18)',
+                color: '#93c5fd',
+                backgroundColor: 'rgba(255,255,255,0.05)',
+                border: '1px solid rgba(255,255,255,0.1)',
               }}
             >
               $5M Insurance Coverage

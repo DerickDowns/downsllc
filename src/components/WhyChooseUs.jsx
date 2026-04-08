@@ -40,13 +40,13 @@ export default function WhyChooseUs() {
   return (
     <section
       className="section-padding relative overflow-hidden"
-      style={{ backgroundColor: '#ffffff' }}
+      style={{ backgroundColor: '''#ffffff''' }}
       ref={ref}
     >
       {/* Background decorative blobs */}
       <div
         className="absolute top-0 right-0 w-96 h-96 rounded-full blur-3xl opacity-5 pointer-events-none"
-        style={{ backgroundColor: '#1e40af' }}
+        style={{ backgroundColor: '#2563eb' }}
       />
       <div
         className="absolute bottom-0 left-0 w-64 h-64 rounded-full blur-3xl opacity-5 pointer-events-none"
@@ -92,7 +92,7 @@ export default function WhyChooseUs() {
                 <div className="flex-shrink-0">
                   <span
                     className="font-display text-5xl md:text-6xl font-bold leading-none select-none"
-                    style={{ color: 'rgba(30,64,175,0.1)', letterSpacing: '-0.02em' }}
+                    style={{ color: 'rgba(30,64,175,0.15)', letterSpacing: '-0.02em' }}
                   >
                     {reason.number}
                   </span>
@@ -105,7 +105,7 @@ export default function WhyChooseUs() {
                       className="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0"
                       style={{ backgroundColor: 'rgba(30,64,175,0.08)', border: '1px solid rgba(30,64,175,0.2)' }}
                     >
-                      <Icon size={17} style={{ color: '#1e40af' }} />
+                      <Icon size={17} style={{ color: '#2563eb' }} />
                     </div>
                     <h3 className="font-display font-bold text-xl" style={{ color: '#0f172a' }}>
                       {reason.title}

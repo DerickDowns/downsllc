@@ -78,7 +78,7 @@ export default function Testimonials() {
           <div
             className="inline-flex items-center gap-4 px-6 py-3 rounded-full"
             style={{
-              backgroundColor: '#f8fafc',
+              backgroundColor: '#ffffff',
               border: '1px solid rgba(30,64,175,0.2)',
             }}
           >
@@ -123,7 +123,7 @@ export default function Testimonials() {
               <StarRating count={t.rating} />
 
               {/* Quote */}
-              <p className="text-base leading-relaxed mt-5 mb-6 flex-grow relative z-10 italic" style={{ color: '#374151' }}>
+              <p className="text-base leading-relaxed mt-5 mb-6 flex-grow relative z-10 italic" style={{ color: '#0f172a' }}>
                 "{t.quote}"
               </p>
 
@@ -151,7 +151,7 @@ export default function Testimonials() {
           transition={{ delay: 0.7, duration: 0.6 }}
           className="text-center mt-14"
         >
-          <p className="text-sm mb-5" style={{ color: '#64748b' }}>
+          <p className="text-sm mb-5" style={{ color: '#475569' }}>
             Join the clients who trusted VIG to deliver the truth.
           </p>
           <a
